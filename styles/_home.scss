@@ -1,0 +1,25 @@
+.home-container{
+  padding-right: 9rem;
+  padding-left: 9rem;
+  margin: 0 auto;
+  max-width: 114rem;
+
+  @include respond(tab-land) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  @include respond(tab-port) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  @include respond(phone) {
+    max-width: 40rem;
+  }
+}
+
+.my-5{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}

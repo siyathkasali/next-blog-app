@@ -1,0 +1,53 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/variables';
+
+.userInfo{
+  background: #fff;
+  padding: 4rem;
+  box-shadow: 0 0.4rem 1.1rem rgba(39,39,39,.2);
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+}
+
+.userName{
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid $color-text;
+}
+
+.userShortName{
+  font-size: 1rem;
+}
+
+.paragraph{
+  min-width: 5rem;
+
+  @include respond(tab-port) {
+    min-width: 7rem;
+  }
+}
+
+.my1{
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  display: flex;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.contactInformation{
+  margin: 1rem 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.mL1{
+  margin-left: 1rem;
+  display: inline-block;
+}

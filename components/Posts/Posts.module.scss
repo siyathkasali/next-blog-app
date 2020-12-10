@@ -1,0 +1,32 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.posts {
+  background-color: $color-white;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  transition: transform .3s ease,box-shadow .3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+
+  @include respond(tab-port) {
+    padding: 1rem;
+  }
+}
+
+.td {
+  border: 1px solid $color-border-td;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.tr{
+  &:nth-child(even) {
+    background-color: $color-background-tr;
+  }
+}

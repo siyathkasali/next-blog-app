@@ -1,0 +1,30 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/variables';
+
+.post{
+  background: #fff;
+  padding: 4rem;
+  box-shadow: 0 0.4rem 1.1rem rgba(39,39,39,.2);
+  border-radius: 0.5rem;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+}
+
+.postTitle{
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid $color-text;
+}
+
+.postDescription{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.postBody{
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}

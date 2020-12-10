@@ -1,0 +1,23 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.navbar {
+  height: 60px;
+  background: $color-navbar-background;
+  padding: 15px;
+  cursor: pointer;
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
+}
+
+.navbarText{
+  font-size: 1.6rem;
+  color: $color-white;
+  margin-left: 11rem;
+
+  @include respond(tab-land) {
+    margin-left: 3rem;
+  }
+}

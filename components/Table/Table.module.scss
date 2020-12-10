@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.td {
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+.th {
+  text-align: left;
+  background: $color-selection;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: $color-white;
+}

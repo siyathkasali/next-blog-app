@@ -1,0 +1,53 @@
+$color-lightgreen: #30FFB7;
+$color-skyblue: #07DEFF;
+$color-blue: #07DEFF;
+$color-red: red;
+
+.divCenter{
+  text-align: center;
+}
+
+.dots{
+  height: 3rem;
+  width: 3rem;
+  border-radius:50%;
+  transform: scale(0);
+  background-color: $color-red;
+  animation: scaling 2.5s ease-in-out infinite;
+  display: inline-block;
+  margin:.5rem;
+}
+
+.dot1{
+  animation-delay:0s;
+}
+.dot2{
+  animation-delay:0.2s;
+}
+.dot3{
+  animation-delay:0.4s;
+}
+.dot4{
+  animation-delay:0.6s;
+}
+.dot5{
+  animation-delay:0.8s;
+}
+.dot6{
+  animation-delay:1s;
+}
+
+@keyframes scaling{
+  0%, 100%{
+    transform: scale(0.2);
+    background-color: $color-lightgreen;
+  }
+  40%{
+    transform: scale(1);
+    background-color:  $color-skyblue;
+  }
+  50%{
+    transform: scale(1);
+    background-color: $color-blue;
+  }
+}
