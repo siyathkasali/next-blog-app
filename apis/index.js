@@ -1,8 +1,7 @@
 import axios from 'axios';
-import { URL } from '../constants/index';
 
 const config = {
-  baseURL: URL,
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
   timeout: 9000,
   headers: {
     'Content-Type': 'application/json',
