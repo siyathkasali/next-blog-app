@@ -1,14 +1,9 @@
 import axios from 'axios';
-import getConfig from 'next/config'
 
-const { publicRuntimeConfig } = getConfig();
-
-const { API_URL } = publicRuntimeConfig;
-
-console.log('API_URL', API_URL)
+console.log('apiUrl', process.env.apiUrl)
 
 const config = {
-  baseURL: API_URL,
+  baseURL: process.env.apiUrl,
   timeout: 9000,
   headers: {
     'Content-Type': 'application/json',
