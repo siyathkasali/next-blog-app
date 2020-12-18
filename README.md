@@ -9,6 +9,7 @@ When you click on a post/row in the created table, you go to a new page/view whe
 We have used proper UX guidelines like page accessability to visual impaired persons also as we as a developer has to take care of all basic UX principles guidelines we have use rem/em for css.
 
 <a href="https://next-blog-app.herokuapp.com/">Next Blog App Demo in Heroku</a>
+<br>
 <a href="https://next-blog-app-three.vercel.app/">Next Blog App Demo in Vercel</a>
 
 
